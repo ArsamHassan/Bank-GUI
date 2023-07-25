@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #54d44f;" text="Terminate Account" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#backButtonMenu" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: #FFCCCB;" text="🢀" textFill="RED">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="89.0" layoutY="152.0" prefHeight="38.0" prefWidth="122.0" text="Username:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="191.0" prefHeight="42.0" prefWidth="122.0" text=" Password:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField id="username" fx:id="terminateUsername" layoutX="215.0" layoutY="158.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Username" />
+      <PasswordField fx:id="terminatePassword" layoutX="215.0" layoutY="199.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Password" />
+      <Label layoutX="175.0" layoutY="103.0" prefHeight="38.0" prefWidth="249.0" text="Confirm Identity:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="terminateUnsuccessful" layoutX="223.0" layoutY="241.0" text="Username or password incorrect" textFill="#ea0000" visible="false" />
+      <Label fx:id="terminateSuccessful" layoutX="251.0" layoutY="241.0" text="Identity Verified" textFill="#168c23fc" visible="false" />
+      <RadioButton fx:id="terminateConfirmOption" layoutX="100.0" layoutY="274.0" mnemonicParsing="false" text="I confirm all the contents associated with this account will be deleted." />
+      <Button id="button" fx:id="loginSubmit" defaultButton="true" layoutX="240.0" layoutY="335.0" mnemonicParsing="false" onAction="#terminateAccountConfirm" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #54d44f;" text="Confirm">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

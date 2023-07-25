@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #54d44f;" text="Check Balance" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="124.0" prefHeight="38.0" prefWidth="309.0" text="Chequing Amount : $ ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="181.0" prefHeight="38.0" prefWidth="280.0" text="Savings Amount : $ ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="256.0" prefHeight="38.0" prefWidth="323.0" text="Total Bank Balance:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="248.0" prefHeight="38.0" prefWidth="25.0" text="\$" textFill="DARKGREEN">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalBankBalance" layoutX="336.0" layoutY="248.0" prefHeight="54.0" prefWidth="249.0" text=" " textFill="DARKGREEN">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="savingsAmount" layoutX="334.0" layoutY="181.0" prefHeight="38.0" prefWidth="180.0" text=" ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="chequingAmount" layoutX="334.0" layoutY="124.0" prefHeight="38.0" prefWidth="180.0" text=" ">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="548.0" layoutY="137.0" mnemonicParsing="false" onAction="#chequingRevealButton" prefHeight="26.0" prefWidth="35.0" text="👁" />
+      <Button layoutX="548.0" layoutY="187.0" mnemonicParsing="false" onAction="#savingsRevealButton" prefHeight="26.0" prefWidth="35.0" text="👁" />
+      <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#backButtonMenu" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: #FFCCCB;" text="🢀" textFill="RED">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

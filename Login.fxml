@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #54d44f;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="148.0" prefHeight="38.0" prefWidth="153.0" text="Username:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="186.0" prefHeight="42.0" prefWidth="154.0" text=" Password:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField id="username" fx:id="username" layoutX="234.0" layoutY="154.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Username" />
+      <PasswordField fx:id="password" layoutX="234.0" layoutY="195.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Password" />
+      <Button id="button" fx:id="loginSubmit" defaultButton="true" layoutX="231.0" layoutY="293.0" mnemonicParsing="false" onAction="#loginSubmit" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #54d44f;" text="Submit">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLogin" layoutX="214.0" layoutY="255.0" text="Username or password incorrect" textFill="#ea0000" visible="false" />
+      <Label fx:id="successfulLogin" disable="true" layoutX="242.0" layoutY="255.0" text="Successfully logged in" textFill="#168c23fc" visible="false" />
+      <Label fx:id="missingLoginField" layoutX="167.0" layoutY="255.0" text="Error. Missing information. Please fill all text fields." textFill="#ea0000" visible="false" />
+      <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#backButton" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: #FFCCCB;" text="🢀" textFill="RED">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #54d44f;" text="History" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="339.0" mnemonicParsing="false" onAction="#backButtonMenu" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: #FFCCCB;" text="🢀" textFill="RED">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="historyLabel" alignment="TOP_LEFT" layoutX="17.0" layoutY="82.0" prefHeight="247.0" prefWidth="570.0" />
+      <Button id="button" fx:id="revealButton" alignment="CENTER" graphicTextGap="5.0" layoutX="213.0" layoutY="200.0" mnemonicParsing="false" onAction="#historyReveal" prefHeight="34.0" prefWidth="174.0" style="-fx-background-color: #54d44f;" text="Reveal History">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
